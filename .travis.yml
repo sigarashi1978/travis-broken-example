@@ -3,4 +3,6 @@ php:
   - 5.5
   - 5.4
   - hhvm-3.18
+before_script:
+  - curl -sSfL -o ~/.phpenv/versions/hhvm/bin/phpunit https://phar.phpunit.de/phpunit-5.7.phar
 script: phpunit Test.php
